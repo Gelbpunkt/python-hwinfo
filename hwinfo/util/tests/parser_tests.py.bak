@@ -10,7 +10,7 @@ class TestCommandParser(unittest.TestCase):
 	cp = CommandParser()
 	cp.ITEM_REGEXS = [r'four:\ (?P<num>\w+)']
 	rec = cp.parse_item(data)
-	self.assertEqual(rec['num'], '845')
+	self.assertEquals(rec['num'], '845')
 
     def test_parse_items(self):
         data = """
